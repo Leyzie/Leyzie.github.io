@@ -10871,12 +10871,15 @@ html:not(.lt-ie10) .not-animated {
 .ui-to-top, .ui-to-top:focus, .ui-to-top:active {
 	color: #ffffff;
 	background: #790001;
+	opacity: 1;
+	border: 2px solid #790001
 }
 
 .ui-to-top:hover {
 	opacity: 1;
-	color: #ffffff;
 	text-decoration: none;
+	color: #790001;
+	background-color: #fff;
 }
 
 .ui-to-top.active {
@@ -20327,4 +20330,19 @@ table .rub{
 }
 .pagesingl .list-description li span:first-child{
 	margin-right: 0;
+}
+
+.filling-custo{
+	height: 60px;
+	
+}
+.filling-img {
+	display: inline-block;
+	max-width: 100%;
+	height: 58px;
+	margin-right: 10px;
+}
+.select2-chosen{
+	display: flex;
+	align-items: center;
 }

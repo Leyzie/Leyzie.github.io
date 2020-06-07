@@ -1841,4 +1841,21 @@
 		prevArrow: '<button type="button" class="controls slick-prev"></button>',
 		nextArrow: '<button type="button" class="controls slick-next"></button>'
 	  });
+
+
+	
+	
 }());
+// custom select 2	
+$( document ).ready(function() {
+    function format(state) {
+		if (!state.id) return state.text; // optgroup
+		return "<img class='filling-img' src='images/filling/" + state.id.toLowerCase() + ".jpg'/>" + "<span class='text-custom'>"+state.text+"</span>";
+	}
+	$("#upacovca , #nachinka").select2({
+		formatResult: format,
+		formatSelection: format,
+		minimumResultsForSearch: -1
+		// escapeMarkup: function(m) { return m; }
+	});
+});
